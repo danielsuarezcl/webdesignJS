@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gloria+Hallelujah&family=Oswald:wght@200&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#sup{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sup h1{
+    padding: 25px 0px;
+    background: #4a4a4a;
+    text-shadow: 2px 2px 0px #4a4a4a, 5px 4px 0px rgba(255,204,0,0.9);
+    color: #ffffff;
+    font-family: 'Bree Serif', serif;
+    font-size: 72px; 
+    text-align: center;
+}
+
+
+#menu{
+    background-color: #ffcc00;
+}
+
+#menu ul{
+    display: flex;
+    justify-content: center;
+}
+
+#menu li{
+    list-style: none;
+    padding: 15px 20px;
+    font-family: 'Bree Serif', serif;
+    font-size: 32px;
+}
+
+#menu li:hover{
+    background: #909090;
+    color: #ffffff;
+}
+
+#box{
+    display: flex;
+}
+
+#articulos{
+    background-color: #4a4a4a;
+    width: 70%;
+}
+
+#aside{
+    background-color: #909090;
+    width: 30%;
+    max-height: 100%;
+}
+
+#articulos .art-p{
+    width: 100%;
+    padding: 15px 15px 0px 15px;
+}
+
+#articulos .title-p{
+    font-family: 'Bree Serif', serif;
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#articulos .art-img{
+    width: 100%;
+    padding: 0px 15px;
+
+}
+
+#articulos .art-title{
+    font-family: 'Bree Serif', serif;
+    font-size: 32px;
+    text-align: center;
+    color: #ffcc00;
+    padding: 0px 15px;
+
+}
+
+#articulos .box-2-art{
+    display: flex;
+    flex-direction: row;
+}
+
+#articulos .bajada-art{
+    padding: 25px 15px;
+    font-size: 26px;
+}
+
+#articulos .header{
+    color: #ffffff;
+    padding: 15px;
+}
+
+#articulos p{
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+#aside{
+    padding: 15px;
+}
+
+#aside .aside-img{
+    width: 100%;
+}
+
+#aside .news{
+    padding-top: 15px;
+}
+
+#aside .art-title{
+    font-family: 'Bree Serif', serif;
+    font-size: 36px;
+    text-align: center;
+    color: #ffcc00;
+    padding: 15px 0px;
+}
+
+#aside .news{
+    font-family: 'Bree Serif', serif;
+    font-size: 26px;
+    text-align: center;
+    color: #ffffff;
+    padding: 15 0px;
+}
+
+.form .input{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    padding: 20px 10px;
+    font-family: 'Bree Serif', serif; 
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #c0c0c0;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+}
+
+.form .input:hover{
+    background: #efefef;
+    color: #000000;
+}
+
+.form .submit{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    background-color: #ffcc00;
+    border: 3px solid #ffffff;
+    font-family: 'Bree Serif', serif; 
+    font-size: 24px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.form .submit:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+#pie{
+    padding: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+.formFalse{
+    padding: 0px 15px;
+    color: #ffcc00;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
+
+.formTrue{
+    padding: 0px 15px;
+    color: #ffcc00;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    
+}
+
+@media (max-width:768px)  {
+    #aside{
+        display: none;
+    }
+    #articulos{
+        width: 100%;
+    }
+    #menu ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:576px)  {
+    #articulos .box-2-art{
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's my web site'</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/alert.js"></script>
+    <script src="js/formulario.js"></script>
+</head>
+
+<body>
+    <main id="content">
+        <header id="sup">
+            <h1 class="header">My web development</h1>
+            <nav id="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Portafolio</li>
+                    <li>Contacto</li>
+                    <li>Blog</li>
+                    <li>CV</li>
+                </ul>
+            </nav>
+        </header>
+        <main id="box">
+            <aside id="aside">
+                <article class="art-title" id="diaSemana"></article>
+                <img class="aside-img" src="images/city-336708_1280.jpg" alt="">
+                <div class="news">¿Quieres saber más? <br>regístrate desde aquí</div>
+                <form action="" class="form">
+                    <input class="input" type="text" placeholder="Nombre" id="nombre" onchange="ValidaNombre()">
+                    <p id="msgNombre"></p>
+                    <input class="input" type="tel" placeholder="Teléfono" id="fono" onchange="ValidaFono()">
+                    <p id="msgFono"></p>
+                    <input class="input" type="email" placeholder="Correo" id="correo" onchange="ValidaCorreo()">
+                    <p id="msgCorreo"></p>
+                    <input onclick="muestraMensaje()"  class="submit" type="submit" value="Enviar">
+                </form>
+            </aside>
+            <section id="articulos">
+                <p class="header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium, libero quia tempore minima deleniti ut, ducimus eveniet laboriosam inventore, autem repellendus velit facere temporibus. Tempora veniam quidem pariatur et!</p>
+                <div class="box-2-art">
+                    <section class="section-box">
+                        <img class="art-img" src="images/man-1283748_1280.jpg" alt="">
+                        <article class="art-title">Imagen 1</article>
+                        <p class="bajada-art">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eum nostrum culpa vel delectus eveniet in ut itaque molestias! Error, quidem.</p>
+                    </section>
+                    <section class="section-box">
+                        <img class="art-img" src="images/city-2893850_1280.jpg" alt="">
+                        <article class="art-title">Imagen 2</article>
+                        <p class="bajada-art">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eum nostrum culpa vel delectus eveniet in ut itaque molestias! Error, quidem.</p>
+                    </section>
+                </div>
+                <div class="box-2-art">
+                    <section class="section-box">
+                        <img class="art-img" src="images/city-2893850_1280.jpg" alt="">
+                        <article class="art-title">Imagen 3</article>
+                        <p class="bajada-art">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eum nostrum culpa vel delectus eveniet in ut itaque molestias! Error, quidem.</p>
+                    </section>
+                    <section class="section-box">
+                        <img class="art-img" src="images/man-1283748_1280.jpg" alt="">
+                        <article class="art-title">Imagen 4</article>                        <p class="bajada-art">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eum nostrum culpa vel delectus eveniet in ut itaque molestias! Error, quidem.</p>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer id="pie">Algunos derechos reservados, 2021</footer>
+    </main>
+</body>
+<script src="js/arrays.js"></script>
+
+</html>
